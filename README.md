@@ -17,14 +17,14 @@ export default config ;
 
 # conexionController
 
-import {Request, Response  } from 'express';
-const oracledb = require('oracledb');
+    import {Request, Response  } from 'express';
+    const oracledb = require('oracledb');
 
-import config from '../database'
+    import config from '../database'
 
-class ConexionController {
-  public index (req: Request, res: Response) {
-    async function getEmployee () {
+    class ConexionController {
+     public index (req: Request, res: Response) {
+     async function getEmployee () {
       let conn
     
       try {
@@ -49,10 +49,10 @@ class ConexionController {
     
     
     }
-}
+    }
 
-const conexionController = new ConexionController();
+    const conexionController = new ConexionController();
 
-export default conexionController;
+    export default conexionController;
 
 
